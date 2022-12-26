@@ -25,3 +25,7 @@ Route::get('/items',[shopItemController::class, 'index']);
 
 // show all shops
 Route::get('/shops',[shopItemController::class, 'getallshops']);
+
+Route::post('/add/shop', [shopItemController::class, 'addshopwithparams']);
+Route::post('/add/item', [shopItemController::class, 'additemswithparams']);
+

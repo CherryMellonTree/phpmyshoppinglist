@@ -22,8 +22,7 @@ Route::get('/items/{shopid}', [shopItemController::class, 'getitemsoneshop'])->w
 Route::get('/shops', [shopItemController::class, 'showShops']);
 
 //page with form to add shops/items?
-Route::get('/additems', [shopItemController::class, 'additems']);
-Route::post('/add/item', [shopItemController::class, 'additemswithparams']);
+Route::get('/additems', [shopItemController::class, 'additemsandshops']);
 
 //homepage
 Route::get('/', function () {
